@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Germania+One&display=swap');
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Germania One', cursive;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.banner video {
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.banner .content{
+    position: relative;
+    z-index:1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner .content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #fff
+}
+
+.gallery-block{
+    padding-bottom: 60px; padding-top:60px
+}
+.gallery-block.cards-gallery h4{
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery-block.cards-gallery .card{
+    transition: 0.4s easy
+}
+.gallery-block.cards-gallery .card img{
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15)
+}
+.gallery-block.cards-gallery .card-body{
+    text-align:center
+}
+.gallery-block.cards-gallery a{
+    color: #212529
+}
+.gallery-block.cards-gallery a:hover{
+    text-decoration: none
+}
+.gallery-block.cards-gallery .card{
+    margin-bottom: 30px;
+    box-shadow: 0px 2px10px rgba(0,0,0,0.15)
+}
+.img-container{
+    max-width: 400px;
+    max-height: 500px;
+}
+
+#about h1{
+    text-align: center;
+}
+#about p{
+    font-size: 1.3em;
+    text-align:center;
+}
+#about .btn{
+    float:center;
+}
+@media (min-width:576px) {
+    .gallery-block .transform-on-hover:hover{
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.15) !important
+    }
+}
